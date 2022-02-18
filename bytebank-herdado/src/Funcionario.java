@@ -2,19 +2,10 @@
 public class Funcionario {
 	private String nome;
 	private String cpf;
-	private double salario;
-	
-	/*public Funcionario() {
-	}
-	
-	public Funcionario(String nome, String cpf, double salario) {
-		this.nome = nome;
-		this.cpf = cpf;
-		this.salario = salario;
-	}*/
+	private double salario; // protected double salario
 	
 	public double getBonificacao() {
-		return this.salario * 0.1;
+		return this.salario * 0.05;
 	}
 	
 	public String getNome() {
