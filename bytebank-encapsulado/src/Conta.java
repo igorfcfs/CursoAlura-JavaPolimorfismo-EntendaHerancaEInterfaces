@@ -14,7 +14,7 @@ public class Conta {
 		System.out.println("O total de contas e " + Conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
-		System.out.println("Estou criando uma conta" + this.numero);
+		System.out.println("Estou criando uma conta " + this.numero);
 	}
 	
 	public void deposita(double valor) {
