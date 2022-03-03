@@ -3,19 +3,26 @@ public class TesteReferencias {
 
 	public static void main(String[] args) {
 		
-		// pra que fazer isso?
-		// Gerente g1 = Funcionario(); // - erro, nem todo funcionario e um gerente
-		
-		/*1*/Gerente g1 = new Gerente(); // - ok
-		// /*2*/ Funcionario g1 = new Gerente(); // - gerente e um funcionario
-		
-		
+		Gerente g1 = new Gerente();
 		g1.setNome("Marcos");
-		String nome = g1.getNome();
+		g1.setSalario(5000.0);
 		
-		//g1.autentica(2222); - o compilador so olha no tipo da referencia (so serve se vc usar o polimorfismo, tipo 2)
+		Funcionario f = new Funcionario();
+		f.setSalario(2000.0);
 		
-		System.out.println(nome);
+		EditorVideo ev = new EditorVideo();
+		ev.setSalario(2500.0);
+		
+		Designer d = new Designer();
+		ev.setSalario(2000.0);
+		
+		ControleBonificacao controle = new ControleBonificacao();
+		controle.registra(g1);
+		controle.registra(f);
+		controle.registra(ev);
+		controle.registra(d);
+		
+		System.out.println(controle.getSoma());
 		
 	}
 	
