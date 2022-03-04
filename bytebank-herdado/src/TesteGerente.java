@@ -2,6 +2,10 @@
 public class TesteGerente {
 
 	public static void main(String[] args) {
+		
+		//Funcionario referencia = new Gerente()/*Administrador/Cliente*/;
+		Autenticavel referencia = new Cliente()/*Administrador/Gerente*/;
+		
 		Gerente g1 = new Gerente();
 		g1.setNome("Marco");
 		g1.setCpf("235568413");
